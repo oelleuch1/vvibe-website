@@ -1,0 +1,59 @@
+$primary: #597DFF;
+$black: #000;
+$primary-bg: #E5E5E5;
+$black--light: #000117;
+$white: #FFF;
+
+/** Globals **/
+body { margin: 0; }
+a { text-decoration: none; cursor: pointer; }
+
+/** breakpoints for responsive design **/
+$xs: 600px;
+$sm: 960px;
+$md: 1200px;
+$lg: 1904px;
+
+/** mixins for responsive design **/
+@mixin for-mobile {
+    @media (max-width: $xs) {
+        @content;
+    }
+}
+
+@mixin for-tablet-landscape {
+    @media (min-width: $sm) {
+        @content;
+    }
+}
+
+@mixin for-desktop {
+    @media (min-width: $md) {
+        @content;
+    }
+}
+
+@mixin for-big-desktop {
+    @media (min-width: $lg) {
+        @content;
+    }
+}
+
+/** reusable styles **/
+@mixin flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin flex-justify-center {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@mixin flex-justify-start {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
