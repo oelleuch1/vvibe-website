@@ -1,4 +1,5 @@
 <template>
+  <!-- logo -->
   <svg
     v-if="id === 'logo'"
     width="138"
@@ -21,8 +22,10 @@
       fill="#597DFF"
     />
   </svg>
+
+  <!-- magic-star -->
   <svg
-    v-else-if="id === 'magic-start'"
+    v-else-if="id === 'magic-star'"
     xmlns="http://www.w3.org/2000/svg"
     height="20"
     width="20"
@@ -33,7 +36,14 @@
     />
   </svg>
 
-  <svg v-else-if="id === 'sent'" width="179" height="65" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- comment-with-love -->
+  <svg
+    v-else-if="id === 'comment-with-love'"
+    width="179"
+    height="65"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
     <path
       fill-rule="evenodd"
       clip-rule="evenodd"
@@ -53,17 +63,86 @@
       fill="#000117"
     />
   </svg>
+
+  <!-- location -->
+  <svg
+    v-else-if="id === 'location'"
+    width="72"
+    height="72"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      fill-rule="evenodd"
+      clip-rule="evenodd"
+      d="M54.067 1.066c8.837 0 16 7.164 16 16v37c0 8.837-7.163 16-16 16h-37c-8.837 0-16-7.163-16-16v-37c0-8.836 7.163-16 16-16h37Z"
+      fill="#FCF8F2"
+    />
+    <path
+      d="M69.567 17.066v37h1v-37h-1Zm-15.5 52.5h-37v1h37v-1Zm-52.5-15.5v-37h-1v37h1Zm15.5-52.5h37v-1h-37v1Zm-15.5 15.5c0-8.56 6.94-15.5 15.5-15.5v-1c-9.113 0-16.5 7.388-16.5 16.5h1Zm15.5 52.5c-8.56 0-15.5-6.94-15.5-15.5h-1c0 9.113 7.387 16.5 16.5 16.5v-1Zm52.5-15.5c0 8.56-6.94 15.5-15.5 15.5v1c9.113 0 16.5-7.387 16.5-16.5h-1Zm1-37c0-9.112-7.387-16.5-16.5-16.5v1c8.56 0 15.5 6.94 15.5 15.5h1Z"
+      fill="#000117"
+    />
+    <path
+      fill-rule="evenodd"
+      clip-rule="evenodd"
+      d="M36 24.911c4.614 0 8.354 3.708 8.354 8.282 0 2.928-2.568 7.316-7.706 13.165l-.158.179-.49.551-.49-.551-.315-.358c-5.033-5.76-7.55-10.088-7.55-12.986 0-4.574 3.74-8.282 8.355-8.282Zm0 5.924a2.43 2.43 0 1 0 0 4.86 2.43 2.43 0 0 0 0-4.86Z"
+      fill="#000117"
+    />
+    <path
+      fill-rule="evenodd"
+      clip-rule="evenodd"
+      d="M36 24.205c5.003 0 9.061 4.023 9.061 8.988 0 3.282-2.853 8.027-8.535 14.367a.706.706 0 0 1-1.017.036l-.036-.037-.332-.373-.324-.367-.315-.36c-5.034-5.79-7.563-10.176-7.563-13.266 0-4.965 4.058-8.988 9.061-8.988Zm0 .706c-4.614 0-8.354 3.708-8.354 8.282 0 2.958 2.621 7.406 7.864 13.344l.49.551.49-.551.316-.358c5.032-5.76 7.549-10.088 7.549-12.986 0-4.574-3.74-8.282-8.355-8.282Zm0 5.165a3.19 3.19 0 1 1 0 6.38 3.19 3.19 0 0 1 0-6.38Zm0 .76a2.43 2.43 0 1 0 0 4.86 2.43 2.43 0 0 0 0-4.86Z"
+      fill="#000117"
+    />
+  </svg>
+
+  <!-- comment -->
+  <svg
+    v-else-if="id === 'comment'"
+    width="64"
+    height="36"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      fill-rule="evenodd"
+      clip-rule="evenodd"
+      d="M46 .667H19.466C9.188.667.835 8.917.67 19.157l-.002.31v15.867H46c9.477 0 17.178-7.606 17.33-17.047l.003-.287c0-9.477-7.606-17.178-17.047-17.33L46 .666Z"
+      fill="#F2D19D"
+    />
+    <path
+      fill-rule="evenodd"
+      clip-rule="evenodd"
+      d="M46 0c9.941 0 18 8.059 18 18s-8.059 18-18 18H.533A.533.533 0 0 1 0 35.467v-16C0 8.716 8.716 0 19.467 0H46Zm0 .667H19.466C9.188.667.835 8.917.67 19.157l-.002.31v15.867H46c9.477 0 17.178-7.606 17.33-17.047l.003-.287c0-9.477-7.606-17.178-17.047-17.33L46 .666ZM38.867 22a.333.333 0 1 1 0 .667h-24.4a.333.333 0 0 1 0-.667h24.4Zm10.666-8.667a.333.333 0 1 1 0 .667H14.467a.333.333 0 0 1 0-.667h35.066Z"
+      fill="#000117"
+    />
+  </svg>
+
+  <!-- line-moved -->
+  <svg
+    v-else-if="id === 'line-moved'"
+    width="130"
+    height="86"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M128.735.648C118.307 49.037 58.871 95.559 1 83.088"
+      stroke="#000117"
+      stroke-dasharray="10 10"
+    />
+  </svg>
 </template>
 
 <script lang="ts">
-import Vue from "vue";
+import Vue from 'vue'
 export default Vue.extend({
-  name: "SvgIcon",
+  name: 'SvgIcon',
   props: {
     id: {
       type: String,
       required: true,
     },
   },
-});
+})
 </script>

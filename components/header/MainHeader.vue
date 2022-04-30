@@ -12,11 +12,11 @@
         :class="{ isActive: item.isSelected }"
       >
         <div class="value">{{ item.value }}</div>
-        <svg-icon v-if="item.isSelected" id="magic-start"></svg-icon>
+        <svg-icon v-if="item.isSelected" id="magic-star"></svg-icon>
       </router-link>
     </div>
     <router-link to="/login" class="menu__login">
-      <button-with-border></button-with-border>
+      <button-with-border label="Log in"></button-with-border>
     </router-link>
   </div>
 </template>
