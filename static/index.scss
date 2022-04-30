@@ -3,6 +3,7 @@ $black: #000;
 $primary-bg: #E5E5E5;
 $black--light: #000117;
 $white: #FFF;
+$purple--light: #664e66;
 
 /** Globals **/
 body { margin: 0; }
@@ -11,7 +12,7 @@ a { text-decoration: none; cursor: pointer; }
 /** breakpoints for responsive design **/
 $xs: 600px;
 $sm: 960px;
-$md: 1200px;
+$md: 1280px;
 $lg: 1904px;
 
 /** mixins for responsive design **/
@@ -55,5 +56,11 @@ $lg: 1904px;
 @mixin flex-justify-start {
     display: flex;
     align-items: flex-start;
+    justify-content: space-between;
+}
+
+@mixin flex-justify-end {
+    display: flex;
+    align-items: flex-end;
     justify-content: space-between;
 }

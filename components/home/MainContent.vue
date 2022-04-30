@@ -18,7 +18,7 @@
         <svg-icon id="location"></svg-icon>
         <svg-icon id="line-moved"></svg-icon>
       </div>
-      <button-with-border label="I want it"></button-with-border>
+      <button-with-border class="button" label="I want it"></button-with-border>
       <svg-icon id="comment"></svg-icon>
     </div>
   </div>
@@ -27,8 +27,8 @@
 <script lang="ts">
 import Vue from 'vue'
 import SvgIcon from '@/components/ui/atoms/SvgIcon.vue'
-import ListImages from '../ui/molecules/ListImages.vue'
-import ButtonWithBorder from '../ui/molecules/ButtonWithBorder.vue'
+import ListImages from '@/components/ui/molecules/ListImages.vue'
+import ButtonWithBorder from '@/components/ui/molecules/ButtonWithBorder.vue'
 export default Vue.extend({
   name: 'MainContent',
   components: { SvgIcon, ListImages, ButtonWithBorder },
@@ -53,10 +53,7 @@ export default Vue.extend({
       justify-content: center;
 
       .sentense {
-        margin-right: 40px;
-      }
-      svg {
-        margin-right: 40px;
+        margin: 0 40px;
       }
     }
 
@@ -82,6 +79,8 @@ export default Vue.extend({
     align-items: center;
 
     .wrapper {
+      margin-left: 75px;
+
       svg {
         &:first-child {
           margin-right: 24px;
@@ -91,6 +90,14 @@ export default Vue.extend({
           top: -42px;
         }
       }
+    }
+
+    .button {
+      right: 100px;
+    }
+
+    svg {
+      margin-right: 110px;
     }
   }
 }

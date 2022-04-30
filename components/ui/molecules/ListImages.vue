@@ -2,7 +2,7 @@
   <div v-bind="$attrs" v-on="$listeners" class="list-images">
     <base-image
       v-for="(image, index) in images"
-      :key="image"
+      :key="index"
       :src="image"
       :style="{ left: `${getPositionIndexInGroup(index)}px` }"
       rounded
@@ -12,7 +12,8 @@
 
 <script lang="ts">
 import Vue from 'vue'
-import BaseImage from '../atoms/BaseImage.vue'
+import BaseImage from '@/components/ui/atoms/BaseImage.vue'
+
 export default Vue.extend({
   components: { BaseImage },
   name: 'ListImages',
@@ -26,8 +27,8 @@ export default Vue.extend({
   },
   methods: {
     getPositionIndexInGroup(index: number): number {
-      if (!index) return 0
-      return -index * 10
+      if (!index) return 0;
+      return -index * 10;
     },
   },
 })
