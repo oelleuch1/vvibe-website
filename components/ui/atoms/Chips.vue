@@ -1,6 +1,6 @@
 <template>
   <div v-bind="$attrs" v-on="$listeners" class="chips">
-    <div class="chips__value">{{ label }}</div>
+    <div :class="{ underline }" class="chips__value">{{ label }}</div>
   </div>
 </template>
 
@@ -13,6 +13,10 @@ export default Vue.extend({
       type: String,
       required: true,
     },
+    underline: {
+        type: Boolean,
+        default: false
+    }
   },
 })
 </script>
@@ -29,7 +33,10 @@ export default Vue.extend({
     font-weight: 600;
     font-size: 32px;
     text-align: center;
-    border-bottom: 2px solid $black--light;
+
+    &.underline {
+      border-bottom: 2px solid $black--light;
+    }
   }
 }
 </style>

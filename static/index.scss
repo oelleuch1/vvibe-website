@@ -1,13 +1,17 @@
 $primary: #597DFF;
 $black: #000;
 $primary-bg: #E5E5E5;
-$black--light: #000117;
-$white: #FFF;
+$white: #FFF;;
+$yellow: #F2D19D;
+
+$white--light: #FCF8F2;
 $purple--light: #664e66;
+$black--light: #000117;
 
 /** Globals **/
 body { margin: 0; }
 a { text-decoration: none; cursor: pointer; }
+$max-width: 1440px;
 
 /** breakpoints for responsive design **/
 $xs: 600px;

@@ -30,7 +30,7 @@ export default Vue.extend({
 
   .container {
     width: 100%;
-    max-width: $md;
+    max-width: $max-width;
   }
 }
 </style>

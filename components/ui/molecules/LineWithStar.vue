@@ -37,7 +37,7 @@ export default Vue.extend({
   }
 
   .star {
-    left: -55%;
+    left: -51%;
     position: relative;
     top: 11px;
   }

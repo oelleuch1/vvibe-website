@@ -4,14 +4,14 @@
       <template #left-content>
         <div class="left-content">
           <h2 class="left-content__title">Conversations that convert</h2>
-          <chips class="left-content__solution" label="solution"></chips>
+          <chips class="left-content__solution" label="solution" underline></chips>
           <div class="left-content__icons">
             <svg-icon id="pause"></svg-icon>
             <svg-icon id="play"></svg-icon>
             <base-image src="/img/author-3.png" class="image"></base-image>
           </div>
           <div class="left-content__icons">
-            <chips label="get it" class="chip"></chips>
+            <chips label="get it" underline class="chip"></chips>
             <svg-icon id="next-arrow"></svg-icon>
           </div>
         </div>
@@ -76,7 +76,7 @@ export default Vue.extend({
 <style lang="scss" scoped>
 .conversations-that-converts {
   .left-content {
-    margin: 137px 52px 210px 82px;
+    margin: 137px 95px 210px 70px;
 
     &__title {
       font-family: 'Archivo Black';
