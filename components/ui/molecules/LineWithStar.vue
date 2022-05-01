@@ -1,8 +1,23 @@
 <template>
-  <div v-bind="$attrs" v-on="$listeners" class="line-with-star">
-    <svg-icon class="circle" v-if="withCircle" id="half-circle-star"></svg-icon>
+  <div
+    v-bind="$attrs"
+    v-on="$listeners"
+    :class="{ down: direction === 'down' }"
+    class="line-with-star"
+  >
+    <svg-icon
+      v-if="withCircle"
+      id="half-circle-star"
+      :class="{ down: direction === 'down' }"
+      class="circle"
+    ></svg-icon>
     <div v-else></div>
-    <svg-icon class="star" id="magic-star" fill="#121216"></svg-icon>
+    <svg-icon
+      v-if="withStar"
+      class="star"
+      id="magic-star"
+      fill="#121216"
+    ></svg-icon>
   </div>
 </template>
 
@@ -18,6 +33,17 @@ export default Vue.extend({
       type: Boolean,
       default: true,
     },
+    direction: {
+      type: String,
+      default: 'up',
+      validator(value) {
+        return ['up', 'down'].includes(value)
+      },
+    },
+    withStar: {
+      type: Boolean,
+      default: true,
+    },
   },
 })
 </script>
@@ -27,6 +53,11 @@ export default Vue.extend({
   @include flex-justify-end;
   border-bottom: 1px solid $black--light;
 
+  &.down {
+    position: relative;
+    top: -118px;
+  }
+
   .circle {
     height: 119px;
     position: relative;
@@ -34,6 +65,11 @@ export default Vue.extend({
     left: calc(100% - 195px);
     z-index: 2;
     background: $primary-bg;
+
+    &.down {
+      transform: rotate(180deg);
+      bottom: -118px;
+    }
   }
 
   .star {
