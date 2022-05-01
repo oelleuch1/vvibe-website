@@ -12,7 +12,7 @@
           <div class="left-content__icons">
             <svg-icon id="pause"></svg-icon>
             <svg-icon id="play"></svg-icon>
-            <base-image src="/img/sam-smith-5.svg" class="image"></base-image>
+            <base-image src="/img/author-3.png" class="image"></base-image>
           </div>
           <div class="left-content__icons">
             <chips label="get it" underline class="chip"></chips>

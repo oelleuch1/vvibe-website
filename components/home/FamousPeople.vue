@@ -17,7 +17,7 @@
 
     <div class="famous-people__all">
       <div v-for="(people, index) in peoples" :key="index" class="people">
-        <base-image :src="people.imageUrl" />
+        <base-image :src="people.imageUrl" :alt="people.name" />
         <div class="people__name" v-text="people.name"></div>
         <div class="people__fucntion" v-text="people.function"></div>
       </div>
@@ -85,6 +85,7 @@ export default Vue.extend({
 
 <style lang="scss" scoped>
 .famous-people {
+  margin-bottom: 148px;
   &__header {
     @include flex-justify-center;
     margin-left: 40px;

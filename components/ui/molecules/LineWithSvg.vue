@@ -3,7 +3,7 @@
     v-bind="$attrs"
     v-on="$listeners"
     :class="{ down: direction === 'down' }"
-    class="line-with-star"
+    class="line-with-svg"
   >
     <svg-icon
       v-if="withCircle"
@@ -13,9 +13,8 @@
     ></svg-icon>
     <div v-else></div>
     <svg-icon
-      v-if="withStar"
-      class="star"
-      id="magic-star"
+      class="svg"
+      :id="svgId"
       fill="#121216"
     ></svg-icon>
   </div>
@@ -27,7 +26,7 @@ import SvgIcon from '@/components/ui/atoms/SvgIcon.vue'
 
 export default Vue.extend({
   components: { SvgIcon },
-  name: 'LineWithStar',
+  name: 'LineWithSvg',
   props: {
     withCircle: {
       type: Boolean,
@@ -44,12 +43,16 @@ export default Vue.extend({
       type: Boolean,
       default: true,
     },
+    svgId: {
+      type: String,
+      default: "magic-star"
+    }
   },
 })
 </script>
 
 <style lang="scss" scoped>
-.line-with-star {
+.line-with-svg {
   @include flex-justify-end;
   border-bottom: 1px solid $black--light;
 
@@ -72,7 +75,7 @@ export default Vue.extend({
     }
   }
 
-  .star {
+  .svg {
     left: -51%;
     position: relative;
     top: 11px;

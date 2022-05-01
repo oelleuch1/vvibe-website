@@ -1,6 +1,6 @@
 <template>
   <div class="block-with-styled-border">
-    <line-with-star :with-circle="withCircle"></line-with-star>
+    <line-with-svg :with-circle="withCircle"></line-with-svg>
     <div class="block-with-styled-border__content">
       <div class="left">
         <slot name="left-content"></slot>
@@ -9,17 +9,17 @@
         <slot name="right-content"></slot>
       </div>
     </div>
-    <line-with-star class="line" :with-circle="false"></line-with-star>
+    <line-with-svg class="line" :with-circle="false"></line-with-svg>
   </div>
 </template>
 
 <script lang="ts">
 import Vue from 'vue'
-import LineWithStar from '@/components/ui/molecules/LineWithStar.vue'
+import LineWithSvg from '@/components/ui/molecules/LineWithSvg.vue'
 
 export default Vue.extend({
   name: 'BlockWithStyledBorder',
-  components: { LineWithStar },
+  components: { LineWithSvg },
   props: {
     withCircle: {
       type: Boolean,
