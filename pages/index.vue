@@ -8,6 +8,7 @@
     <line-with-svg direction="down" />
     <famous-people />
     <line-with-svg :with-circle="false" svg-id="medal" class="medal" />
+    <communities />
   </div>
 </template>
 
@@ -20,6 +21,7 @@ import SignupSteps from '~/components/home/SignupSteps.vue'
 import PowerfullTools from '~/components/home/PowerfullTools.vue'
 import LineWithSvg from '~/components/ui/molecules/LineWithSvg.vue'
 import FamousPeople from '~/components/home/FamousPeople.vue'
+import Communities from '~/components/home/Communities.vue'
 
 export default Vue.extend({
   name: 'HomeView',
@@ -31,6 +33,7 @@ export default Vue.extend({
     PowerfullTools,
     LineWithSvg,
     FamousPeople,
+    Communities,
   },
 })
 </script>
