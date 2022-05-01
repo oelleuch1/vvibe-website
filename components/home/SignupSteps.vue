@@ -101,9 +101,7 @@ export default Vue.extend({
 
 <style lang="scss" scoped>
 .signup-steps {
-  position: relative;
-  left: calc((-100vw + 100%) / 2);
-  width: 100vw;
+  @include full-width;
 
   &__overview {
     height: 100%;

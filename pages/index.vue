@@ -6,6 +6,7 @@
     <signup-steps />
     <powerfull-tools />
     <line-with-star direction="down" :with-star="false" />
+    <famous-people />
   </div>
 </template>
 
@@ -17,10 +18,11 @@ import Celebrities from "~/components/home/Celebrities.vue";
 import SignupSteps from "~/components/home/SignupSteps.vue";
 import PowerfullTools from "~/components/home/PowerfullTools.vue";
 import LineWithStar from "~/components/ui/molecules/LineWithStar.vue";
+import FamousPeople from "~/components/home/FamousPeople.vue";
 
 export default Vue.extend({
   name: "HomeView",
-  components: { MainContent, ConversationsThatConverts, Celebrities, SignupSteps, PowerfullTools, LineWithStar },
+  components: { MainContent, ConversationsThatConverts, Celebrities, SignupSteps, PowerfullTools, LineWithStar, FamousPeople },
 });
 </script>
 

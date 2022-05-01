@@ -4,11 +4,15 @@
       <template #left-content>
         <div class="left-content">
           <h2 class="left-content__title">Conversations that convert</h2>
-          <chips class="left-content__solution" label="solution" underline></chips>
+          <chips
+            class="left-content__solution"
+            label="solution"
+            underline
+          ></chips>
           <div class="left-content__icons">
             <svg-icon id="pause"></svg-icon>
             <svg-icon id="play"></svg-icon>
-            <base-image src="/img/author-3.png" class="image"></base-image>
+            <base-image src="/img/sam-smith-5.svg" class="image"></base-image>
           </div>
           <div class="left-content__icons">
             <chips label="get it" underline class="chip"></chips>
@@ -108,14 +112,13 @@ export default Vue.extend({
   }
 
   .right-content {
-    padding: 137px 108px;
-
+    padding: 137px 108px 137px 40px;
     .paragraph {
-        margin-bottom: 44px;
+      margin-bottom: 44px;
 
-        &:last-child {
-            margin-bottom: 0;
-        }
+      &:last-child {
+        margin-bottom: 0;
+      }
     }
   }
 }

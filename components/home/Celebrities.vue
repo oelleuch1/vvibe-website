@@ -108,8 +108,7 @@ export default Vue.extend({
 
   &__image {
     .image {
-      width: 510px;
-      height: 428px;
+      width: 100%;
     }
   }
 
