@@ -338,7 +338,7 @@
 
   <!-- go-to-link -->
   <svg
-  v-else-if="id === 'go-to-link'"
+    v-else-if="id === 'go-to-link'"
     width="9"
     height="16"
     viewBox="0 0 9 16"
@@ -352,6 +352,34 @@
       stroke-linecap="round"
       stroke-linejoin="round"
     />
+  </svg>
+
+  <!-- outside-link -->
+  <svg
+    v-else-if="id === 'outside-link'"
+    xmlns="http://www.w3.org/2000/svg"
+    width="32"
+    height="32"
+    viewBox="0 0 32 32"
+    fill="none"
+  >
+    <circle cx="16" cy="16" r="15.5" fill="#D9CEDA" stroke="#000117" />
+    <g clip-path="url(#clip0_446_3410)">
+      <path
+        d="M12.1553 9.52485L12.2274 10.6945L21.3219 10.1344L8.65708 22.7992L9.48572 23.6278L22.1505 10.963L21.5904 20.0575L22.7601 20.1296L23.4279 9.28573L22.9992 8.85699L12.1553 9.52485Z"
+        fill="#000117"
+      />
+    </g>
+    <defs>
+      <clipPath id="clip0_446_3410">
+        <rect
+          width="20"
+          height="20"
+          fill="white"
+          transform="translate(2 16.1426) rotate(-45)"
+        />
+      </clipPath>
+    </defs>
   </svg>
 
   <!-- line -->
@@ -409,8 +437,6 @@
       fill="#000117"
     />
   </svg>
-
-  
 </template>
 
 <script lang="ts">

@@ -10,6 +10,7 @@
     <line-with-svg :with-circle="false" svg-id="medal" class="medal" />
     <communities />
     <frequency-asked-questions />
+    <latest-articles />
   </div>
 </template>
 
@@ -24,6 +25,7 @@ import LineWithSvg from '~/components/ui/molecules/LineWithSvg.vue'
 import FamousPeople from '~/components/home/FamousPeople.vue'
 import Communities from '~/components/home/Communities.vue'
 import FrequencyAskedQuestions from '~/components/home/FrequencyAskedQuestions.vue'
+import LatestArticles from '~/components/home/LatestArticles.vue'
 
 export default Vue.extend({
   name: 'HomeView',
@@ -37,11 +39,13 @@ export default Vue.extend({
     FamousPeople,
     Communities,
     FrequencyAskedQuestions,
+    LatestArticles
   },
 })
 </script>
 
-<style lang="scss" scoped>
+<style,
+    LatestArticles lang="scss" scoped>
 .home-page {
   .medal {
     margin-bottom: 114px;
