@@ -67,7 +67,6 @@ export default Vue.extend({
     bottom: -2px;
     left: calc(100% - 195px);
     z-index: 2;
-    background: $primary-bg;
 
     &.down {
       transform: rotate(180deg);

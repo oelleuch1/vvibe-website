@@ -25,7 +25,6 @@ export default Vue.extend({
   .border {
     border: $black--light 2px dashed;
     position: absolute;
-    background: $primary-bg;
     top: 11px;
     background: transparent;
     left: 8px;

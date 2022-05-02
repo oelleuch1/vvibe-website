@@ -1,6 +1,5 @@
 $primary: #597DFF;
 $black: #000;
-$primary-bg: #E5E5E5;
 $white: #FFF;;
 $yellow: #F2D19D;
 
@@ -9,7 +8,7 @@ $purple--light: #664e66;
 $black--light: #000117;
 
 /** Globals **/
-body { margin: 0; }
+body { margin: 0; width: 100vw; }
 a { text-decoration: none; cursor: pointer; }
 $max-width: 1440px;
 

@@ -38,12 +38,12 @@ export default Vue.extend({
     width: 100%;
 
     .left {
-      width: calc(48% + 2px);
+      width: calc(49% - 10px);
       border-right: 1px solid $black--light;
     }
 
     .right {
-      width: 52%;
+      width: calc(51% + 13px);
     }
   }
 

@@ -2,7 +2,7 @@
   <div id="app">
     <div class="container">
       <main-header></main-header>
-      <router-view />
+      <nuxt />
     </div>
   </div>
 </template>
@@ -11,7 +11,7 @@
 import Vue from 'vue'
 import MainHeader from '@/components/header/MainHeader.vue'
 export default Vue.extend({
-  components: { MainHeader }
+  components: { MainHeader },
 })
 </script>
 
@@ -22,7 +22,7 @@ export default Vue.extend({
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: $black;
-  background: $primary-bg;
+  background: linear-gradient(225.81deg, #fdfbf8 -0.7%, #daccdc 128.49%);
   padding: 0 40px;
   display: flex;
   flex-direction: column;

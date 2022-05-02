@@ -22,22 +22,22 @@
 </template>
 
 <script lang="ts">
-import Vue from "vue";
-import SvgIcon from "@/components/ui/atoms/SvgIcon.vue";
-import ButtonWithBorder from "@/components/ui/molecules/ButtonWithBorder.vue";
+import Vue from 'vue'
+import SvgIcon from '@/components/ui/atoms/SvgIcon.vue'
+import ButtonWithBorder from '@/components/ui/molecules/ButtonWithBorder.vue'
 
 export default Vue.extend({
-  name: "MainHeader",
+  name: 'MainHeader',
   components: { SvgIcon, ButtonWithBorder },
   data() {
     return {
       items: [
-        { value: "About", url: "/about", isSelected: true },
-        { value: "How it works", url: "/how-it-works", isSelected: false },
-        { value: "Communities", url: "/communities", isSelected: false },
-        { value: "Blog", url: "/blog", isSelected: false },
+        { value: 'About', url: '/about', isSelected: true },
+        { value: 'How it works', url: '/how-it-works', isSelected: false },
+        { value: 'Communities', url: '/communities', isSelected: false },
+        { value: 'Blog', url: '/blog', isSelected: false },
       ],
-    };
+    }
   },
   watch: {
     // "$route.path": {
@@ -49,8 +49,8 @@ export default Vue.extend({
     //   },
     //   immediate: true
     // }
-  }
-});
+  },
+})
 </script>
 
 <style lang="scss" scoped>
@@ -58,42 +58,40 @@ export default Vue.extend({
   display: flex;
   @include flex-justify-center;
 
-  @include for-desktop {
-    height: 100px;
-    border-bottom: $black--light solid 1px;
+  height: 100px;
+  border-bottom: $black--light solid 1px;
 
-    &__logo {
-      flex: 150px 0 0;
-      @include flex-center;
-    }
+  &__logo {
+    flex: 150px 0 0;
+    @include flex-center;
+  }
 
-    &__items {
-      flex: 50% 0 0;
-      height: 20px;
-      @include flex-justify-start;
+  &__items {
+    flex: 50% 0 0;
+    height: 20px;
+    @include flex-justify-start;
 
-      .item {
-        color: $black--light;
-        font-family: "Gilroy";
-        font-weight: 500;
-        font-size: 14px;
-        line-height: 21px;
-        letter-spacing: 0.01em;
-        text-transform: uppercase;
+    .item {
+      color: $black--light;
+      font-family: 'Gilroy';
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 21px;
+      letter-spacing: 0.01em;
+      text-transform: uppercase;
 
-        &:hover {
-          color: $primary;
-        }
+      &:hover {
+        color: $primary;
+      }
 
-        .value {
-          margin-bottom: 6px;
-        }
+      .value {
+        margin-bottom: 6px;
       }
     }
+  }
 
-    &__login {
-      flex: 150px 0 0;
-    }
+  &__login {
+    flex: 150px 0 0;
   }
 }
 </style>

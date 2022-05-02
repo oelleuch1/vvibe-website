@@ -44,7 +44,8 @@ export default Vue.extend({
   }
 
   img {
-      width: 100%;
+      width: 918px;
+      height: 575px;
   }
 }
 </style>
