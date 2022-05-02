@@ -1,5 +1,5 @@
 <template>
-  <div class="list-chips">
+  <div class="list-chips flex-justify-center">
     <chips
       v-for="(item, index) in items"
       :key="index"
@@ -31,7 +31,6 @@ export default Vue.extend({
 <style lang="scss" scoped>
 
 .list-chips {
-    @include flex-justify-center;
 
     .chips {
         margin-right: 16px;

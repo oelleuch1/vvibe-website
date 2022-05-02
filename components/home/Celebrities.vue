@@ -5,7 +5,7 @@
       <div class="title">
         We help celebrities to create meaningfull connections
       </div>
-      <div class="subtitle">
+      <div class="subtitle flex-center">
         <svg-icon id="line" />
         <div class="text">Sam Smith, celebrity</div>
         <svg-icon id="arrow-here" />
@@ -69,7 +69,6 @@ export default Vue.extend({
     }
 
     .subtitle {
-      @include flex-center;
       margin-top: 41px;
       margin-bottom: 12px;
       width: 255px;

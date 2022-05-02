@@ -1,11 +1,11 @@
 <template>
   <div class="communities">
-    <h2 class="communities__title">Communities of all kinds</h2>
+    <h2 class="communities__title flex-center">Communities of all kinds</h2>
     <div class="communities__description">
       From large retailers to small businesses, see how leading brands create
       value with Vvibe.
     </div>
-    <div class="communities__logos">
+    <div class="communities__logos flex-justify-center">
       <base-image
         v-for="(logo, index) in logos"
         :key="index"
@@ -14,7 +14,7 @@
       />
     </div>
 
-    <div class="communities__block">
+    <div class="communities__block full-width">
       <block-with-styled-border :withCircle="false">
         <template #left-content>
           <div class="list">
@@ -110,7 +110,6 @@ export default Vue.extend({
 <style lang="scss" scoped>
 .communities {
   &__title {
-    @include flex-center;
     font-family: 'Archivo Black';
     font-weight: bolder;
     font-size: 40px;
@@ -132,7 +131,6 @@ export default Vue.extend({
   }
 
   &__logos {
-    @include flex-justify-center;
     max-width: 820px;
     margin: 0 auto;
 
@@ -143,7 +141,6 @@ export default Vue.extend({
   }
 
   &__block {
-      @include full-width;
     height: 100%;
     margin-top: 145px;
 

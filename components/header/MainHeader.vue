@@ -1,9 +1,9 @@
 <template>
-  <div class="menu">
-    <router-link to="/" class="menu__logo">
+  <div class="menu flex-justify-center">
+    <router-link to="/" class="menu__logo flex-center">
       <svg-icon id="logo"></svg-icon>
     </router-link>
-    <div class="menu__items">
+    <div class="menu__items flex-justify-start">
       <router-link
         v-for="item in items"
         :key="item.value"
@@ -55,21 +55,16 @@ export default Vue.extend({
 
 <style lang="scss" scoped>
 .menu {
-  display: flex;
-  @include flex-justify-center;
-
   height: 100px;
   border-bottom: $black--light solid 1px;
 
   &__logo {
     flex: 150px 0 0;
-    @include flex-center;
   }
 
   &__items {
     flex: 50% 0 0;
     height: 20px;
-    @include flex-justify-start;
 
     .item {
       color: $black--light;

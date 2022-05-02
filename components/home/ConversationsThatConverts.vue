@@ -9,12 +9,12 @@
             label="solution"
             underline
           ></chips>
-          <div class="left-content__icons">
+          <div class="left-content__icons flex-justify-center">
             <svg-icon id="pause"></svg-icon>
             <svg-icon id="play"></svg-icon>
             <base-image src="/img/author-3.png" class="image"></base-image>
           </div>
-          <div class="left-content__icons">
+          <div class="left-content__icons flex-justify-center">
             <chips label="get it" underline class="chip"></chips>
             <svg-icon id="next-arrow"></svg-icon>
           </div>
@@ -97,7 +97,6 @@ export default Vue.extend({
     }
 
     &__icons {
-      @include flex-justify-center;
       margin-bottom: 24px;
 
       .image {

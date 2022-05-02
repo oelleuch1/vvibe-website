@@ -1,6 +1,7 @@
 $primary: #597DFF;
 $black: #000;
-$white: #FFF;;
+$white: #FFF;
+;
 $yellow: #F2D19D;
 
 $white--light: #FCF8F2;
@@ -8,8 +9,16 @@ $purple--light: #664e66;
 $black--light: #000117;
 
 /** Globals **/
-body { margin: 0; width: 100vw; }
-a { text-decoration: none; cursor: pointer; }
+body {
+    margin: 0;
+    width: 100vw;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
 $max-width: 1440px;
 
 /** breakpoints for responsive design **/
@@ -43,32 +52,32 @@ $lg: 1904px;
     }
 }
 
-/** reusable styles **/
-@mixin flex-center {
+/** global classes **/
+.flex-center {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-@mixin flex-justify-center {
+.flex-justify-center {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-@mixin flex-justify-start {
+.flex-justify-start {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
 }
 
-@mixin flex-justify-end {
+.flex-justify-end {
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
 }
 
-@mixin full-width {
+.full-width {
     position: relative;
     left: calc((-100vw + 100%) / 2);
     width: 100vw;

@@ -3,7 +3,7 @@
     v-bind="$attrs"
     v-on="$listeners"
     :class="{ down: direction === 'down' }"
-    class="line-with-svg"
+    class="line-with-svg flex-justify-end"
   >
     <svg-icon
       v-if="withCircle"
@@ -53,7 +53,6 @@ export default Vue.extend({
 
 <style lang="scss" scoped>
 .line-with-svg {
-  @include flex-justify-end;
   border-bottom: 1px solid $black--light;
 
   &.down {

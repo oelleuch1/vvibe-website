@@ -1,6 +1,6 @@
 <template>
   <div class="famous-people">
-    <div class="famous-people__header">
+    <div class="famous-people__header flex-justify-center">
       <h2 class="title">
         <span> More than </span>
         <span class="highlighted"> 400,000 <svg-icon id="arrow-here" /> </span>
@@ -15,7 +15,7 @@
       quick and convenient messages.
     </div>
 
-    <div class="famous-people__all">
+    <div class="famous-people__all flex-justify-center full-width">
       <div v-for="(people, index) in peoples" :key="index" class="people">
         <base-image :src="people.imageUrl" :alt="people.name" />
         <div class="people__name" v-text="people.name"></div>
@@ -87,7 +87,6 @@ export default Vue.extend({
 .famous-people {
   margin-bottom: 148px;
   &__header {
-    @include flex-justify-center;
     margin-left: 40px;
 
     .title {
@@ -134,8 +133,6 @@ export default Vue.extend({
   }
 
   &__all {
-    @include flex-justify-center;
-    @include full-width;
 
     .people {
       img {

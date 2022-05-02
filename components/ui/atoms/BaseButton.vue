@@ -1,5 +1,5 @@
 <template>
-  <button class="base-button" v-bind="$attrs" v-on="$listeners">
+  <button class="base-button flex-center" v-bind="$attrs" v-on="$listeners">
     {{ label }}
   </button>
 </template>
@@ -16,7 +16,6 @@ export default Vue.extend({
 
 <style lang="scss" scoped>
 .base-button {
-  @include flex-center;
   width: 116px;
   height: 48px;
   background: $black--light;

@@ -1,5 +1,5 @@
 <template>
-  <div class="signup-steps">
+  <div class="signup-steps full-width">
     <block-with-styled-border :withCircle="false">
       <template #left-content>
         <div class="signup-steps__overview">
@@ -101,7 +101,6 @@ export default Vue.extend({
 
 <style lang="scss" scoped>
 .signup-steps {
-  @include full-width;
 
   &__overview {
     height: 100%;
