@@ -39,43 +39,43 @@ export default Vue.extend({
         {
           name: 'sam smith',
           function: 'Celebrity',
-          imageUrl: '/img/sam-smith-f1.svg',
+          imageUrl: '/img/famous/sam-smith-f1.svg',
         },
         {
           name: 'matthew mockridge',
           function: 'Celebrity',
-          imageUrl: '/img/matthew-mockridge.svg',
+          imageUrl: '/img/famous/matthew-mockridge.svg',
         },
         {
           name: 'sam smith',
           function: 'Celebrity',
-          imageUrl: '/img/sam-smith-f2.svg',
+          imageUrl: '/img/famous/sam-smith-f2.svg',
         },
         {
           name: 'sam smith',
           function: 'Celebrity',
-          imageUrl: '/img/sam-smith-f3.svg',
+          imageUrl: '/img/famous/sam-smith-f3.svg',
         },
         {
           name: 'vitto emmermann',
           function: 'Celebrity',
-          imageUrl: '/img/vitto-emmermann.svg',
+          imageUrl: '/img/famous/vitto-emmermann.svg',
         },
 
         {
           name: 'Robin Söder',
           function: 'Celebrity',
-          imageUrl: '/img/robin-soder.svg',
+          imageUrl: '/img/famous/robin-soder.svg',
         },
         {
           name: 'sam smith',
           function: 'Celebrity',
-          imageUrl: '/img/sam-smith-f4.svg',
+          imageUrl: '/img/famous/sam-smith-f4.svg',
         },
         {
           name: 'sam smith',
           function: 'Celebrity',
-          imageUrl: '/img/sam-smith-f5.svg',
+          imageUrl: '/img/famous/sam-smith-f5.svg',
         },
       ],
     }

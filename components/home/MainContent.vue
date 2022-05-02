@@ -34,7 +34,7 @@ export default Vue.extend({
   components: { SvgIcon, ListImages, ButtonWithBorder },
   data() {
     return {
-      images: ['/img/author-1.png', '/img/author-2.png', '/img/author-3.png'],
+      images: ['/img/authors/author-1.png', '/img/authors/author-2.png', '/img/authors/author-3.png'],
     }
   },
 })

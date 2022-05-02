@@ -74,23 +74,26 @@ export default Vue.extend({
   data() {
     return {
       logos: [
-        { url: '/img/intec-logo.svg', alt: 'intect logo' },
-        { url: '/img/cargo-logo.svg', alt: 'cargo' },
+        { url: '/img/logos/intec-logo.svg', alt: 'intect logo' },
+        { url: '/img/logos/cargo-logo.svg', alt: 'cargo' },
         {
-          url: '/img/entrepreneur-university-logo.svg',
+          url: '/img/logos/entrepreneur-university-logo.svg',
           alt: 'entrepreneur university',
         },
-        { url: '/img/cierra-logo.svg', alt: 'cierra' },
-        { url: '/img/matthew-mockridge-logo.svg', alt: 'matthew mockridge' },
+        { url: '/img/logos/cierra-logo.svg', alt: 'cierra' },
+        {
+          url: '/img/logos/matthew-mockridge-logo.svg',
+          alt: 'matthew mockridge',
+        },
       ],
 
       peoples: [
-        { image: '/img/robin-soder-communities.svg' },
+        { image: '/img/communities/robin-soder-communities.svg' },
         { name: 'Matthew Mockridge', svg: 'line-moved-right' },
-        { image: '/img/matthew-mockridge-communities.svg' },
+        { image: '/img/communities/matthew-mockridge-communities.svg' },
         { name: 'Robin Söder', svg: 'line-moved-up' },
         { name: null, svg: null, image: null },
-        { image: '/img/vitto-emmermann-communities.svg' },
+        { image: '/img/communities/vitto-emmermann-communities.svg' },
         { name: 'Vittorio Emmermann', svg: 'line-moved-left' },
       ],
       styles: [
@@ -150,6 +153,9 @@ export default Vue.extend({
       ::v-deep .block-with-color {
         padding: 102px 44px;
         height: calc(100% - 204px);
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
       }
 
       .text {
