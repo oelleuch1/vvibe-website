@@ -9,6 +9,7 @@
     <famous-people />
     <line-with-svg :with-circle="false" svg-id="medal" class="medal" />
     <communities />
+    <frequency-asked-questions />
   </div>
 </template>
 
@@ -22,6 +23,7 @@ import PowerfullTools from '~/components/home/PowerfullTools.vue'
 import LineWithSvg from '~/components/ui/molecules/LineWithSvg.vue'
 import FamousPeople from '~/components/home/FamousPeople.vue'
 import Communities from '~/components/home/Communities.vue'
+import FrequencyAskedQuestions from '~/components/home/FrequencyAskedQuestions.vue'
 
 export default Vue.extend({
   name: 'HomeView',
@@ -34,6 +36,7 @@ export default Vue.extend({
     LineWithSvg,
     FamousPeople,
     Communities,
+    FrequencyAskedQuestions,
   },
 })
 </script>

@@ -1,23 +1,23 @@
 <template>
   <div class="menu flex-justify-center">
-    <router-link to="/" class="menu__logo flex-center">
+    <nuxt-link to="/" class="menu__logo flex-center">
       <svg-icon id="logo"></svg-icon>
-    </router-link>
+    </nuxt-link>
     <div class="menu__items flex-justify-start">
-      <router-link
+      <nuxt-link
         v-for="item in items"
         :key="item.value"
         :to="item.url"
         class="item"
         :class="{ isActive: item.isSelected }"
       >
-        <div class="value">{{ item.value }}</div>
+        <div v-text="item.value" class="value"></div>
         <svg-icon v-if="item.isSelected" id="magic-star"></svg-icon>
-      </router-link>
+      </nuxt-link>
     </div>
-    <router-link to="/login" class="menu__login">
+    <nuxt-link to="/login" class="menu__login">
       <button-with-border label="Log in"></button-with-border>
-    </router-link>
+    </nuxt-link>
   </div>
 </template>
 
